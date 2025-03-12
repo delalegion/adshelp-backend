@@ -20,7 +20,18 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "metaKeywords": {
+      "type": "string"
+    },
+    "metaTerms": {
+      "type": "string"
+    },
+    "metaName": {
+      "type": "string"
     }
   }
 }
