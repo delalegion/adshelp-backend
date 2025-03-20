@@ -7,7 +7,7 @@ module.exports = ({ env }) => [
           contentSecurityPolicy: {
             directives: {
               'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-              'img-src': ["'self'", 'data:', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`],
+              'img-src': ["'self'", 'data:', 'cdn.jsdelivr.net', 'strapi.io', `${env('DO_SPACE_BUCKET')}.s3.${env('DO_SPACE_REGION')}.amazonaws.com`, `${env('DO_SPACE_BUCKET')}.${env('DO_SPACE_REGION')}.cdn.digitaloceanspaces.com`],
             },
           }
         },
