@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_seo_artykulies",
+  "info": {
+    "displayName": "SEO Artykuly",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string",
+      "required": true
+    },
+    "shareImage": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "metaKeywords": {
+      "type": "string",
+      "required": true
+    },
+    "metaTerms": {
+      "type": "string",
+      "required": true
+    },
+    "metaName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

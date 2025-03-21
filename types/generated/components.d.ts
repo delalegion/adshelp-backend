@@ -53,6 +53,23 @@ export interface SharedSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSeoArtykuly extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seo_artykulies';
+  info: {
+    displayName: 'SEO Artykuly';
+    icon: 'crown';
+  };
+  attributes: {
+    metaDescription: Schema.Attribute.String & Schema.Attribute.Required;
+    metaKeywords: Schema.Attribute.String & Schema.Attribute.Required;
+    metaName: Schema.Attribute.String & Schema.Attribute.Required;
+    metaTerms: Schema.Attribute.String & Schema.Attribute.Required;
+    metaTitle: Schema.Attribute.String;
+    shareImage: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+  };
+}
+
 export interface SharedSlider extends Struct.ComponentSchema {
   collectionName: 'components_shared_sliders';
   info: {
@@ -72,6 +89,7 @@ declare module '@strapi/strapi' {
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
+      'shared.seo-artykuly': SharedSeoArtykuly;
       'shared.slider': SharedSlider;
     }
   }

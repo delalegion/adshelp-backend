@@ -39,17 +39,18 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "SEO": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
-    },
     "artykul": {
       "type": "customField",
       "options": {
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "SEO": {
+      "displayName": "SEO Artykuly",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo-artykuly"
     }
   }
 }
